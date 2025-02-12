@@ -9,7 +9,7 @@ contract Verify is ERC721URIStorage, Ownable {
 
       uint256 private _tokenIds;
 
-    constructor() ERC721("Government Document", "GDOC") {}
+    constructor() ERC721("Government Document", "GDOC") Ownable(msg.sender) {}
 
     function mintDocument(address recipient, string memory metadataURI)
         public onlyOwner
