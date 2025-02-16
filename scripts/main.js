@@ -9,8 +9,8 @@ const pinata = new PinataSDK({
 
 async function upload(){
   try {
-    const blob = new Blob([fs.readFileSync("./hello-world.txt")]);
-    const file = new File([blob], "hello-world.txt", { type: "text/plain"})
+    const blob = new Blob([fs.readFileSync("Government documents")]);
+    const file = new File([blob], "Gvt data", { type: "text/plain"})
     const upload = await pinata.upload.file(file);
     console.log(upload)
   } catch (error) {
