@@ -2,6 +2,7 @@ const { PinataSDK } = require("pinata-web3")
 const fs = require("fs")
 require("dotenv").config()
 
+//use jwt and pinata key
 const pinata = new PinataSDK({
   pinataJwt: process.env.PINATA_JWT,
   pinataGateway: process.env.GATEWAY_URL
