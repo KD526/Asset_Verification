@@ -11,6 +11,7 @@ contract Verify is ERC721URIStorage, Ownable {
 
     constructor() ERC721("Government Document", "GDOC") Ownable(msg.sender) {}
 
+    //mint nft id
     function mintDocument(address recipient, string memory metadataURI)
         public 
         returns (uint256)
