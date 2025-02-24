@@ -8,6 +8,7 @@ const pinata = new PinataSDK({
   pinataGateway: process.env.GATEWAY_URL
 })
 
+//upload file to IPFS using pinata
 async function upload(){
   try {
     const blob = new Blob([fs.readFileSync("Government documents")]);
